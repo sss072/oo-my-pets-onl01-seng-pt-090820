@@ -32,11 +32,14 @@ class Owner
   def sell_pets 
     self.dogs.each do |element|
       element.mood = "nervous"
+      element.owner = nil 
     end 
     self.cats.each do |element|
       element.mood = "nervous"
+      element.owner = nil 
     end 
   end
+  
   
   def say_species 
     "I am a human."
