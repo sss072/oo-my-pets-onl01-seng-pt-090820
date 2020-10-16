@@ -19,6 +19,12 @@ class Owner
   def buy_dog(dog_name)
     new_dog = Dog.new(dog_name, self) 
   end 
+  def walk_dogs
+    self.dogs.each do |element| 
+      element.mood = "happy"
+    end 
+  end 
+  
   def say_species 
     "I am a human."
   end 
