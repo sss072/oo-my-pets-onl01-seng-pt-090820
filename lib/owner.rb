@@ -29,6 +29,14 @@ class Owner
       element.mood = "happy"
     end 
   end
+  def sell_pets 
+    self.dogs.each do |element|
+      element.mood = "nervous"
+    end 
+    self.cats.each do |element|
+      element.mood = "nervous"
+    end 
+  end
   
   def say_species 
     "I am a human."
