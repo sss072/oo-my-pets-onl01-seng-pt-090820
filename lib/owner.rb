@@ -7,7 +7,8 @@ class Owner
     @@all << self 
   end
   def cats 
-    cat.all.select { 
+    cat.all.select { |element| element.owner == self }
+  end 
   
   def say_species 
     "I am a human."
