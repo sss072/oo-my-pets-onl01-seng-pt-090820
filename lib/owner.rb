@@ -24,6 +24,11 @@ class Owner
       element.mood = "happy"
     end 
   end 
+  def feed_cats 
+    self.cats.each do |element|
+      element.mood = "happy"
+    end 
+  end
   
   def say_species 
     "I am a human."
