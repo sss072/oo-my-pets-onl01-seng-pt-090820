@@ -13,7 +13,9 @@ class Owner
     Dog.all.select { |element| element.owner == self }
   end 
   def buy_cat(cat_name)
-  
+   new_cat = Cat.new(cat_name)
+   new_cat.owner = self 
+  end 
   def say_species 
     "I am a human."
   end 
