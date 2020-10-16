@@ -9,6 +9,9 @@ class Owner
   def cats 
     Cat.all.select { |element| element.owner == self }
   end 
+  def dogs 
+    Dog.all.select { |element| element.owner == self }
+  end 
   
   def say_species 
     "I am a human."
