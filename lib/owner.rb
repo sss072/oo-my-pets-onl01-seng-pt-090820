@@ -40,14 +40,7 @@ class Owner
     end 
   end
   def list_pets 
-    pets_list = []
-    self.dogs.each do |element|
-      pets_list << element 
-    end 
-    self.cats.each do |element|
-      pets_list << element
-    end 
-    pets_list
+    "I have #{self.dogs.count} dog(s), and #{self.cats.count} cat(s)."
   end 
   
   
