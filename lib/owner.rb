@@ -39,6 +39,16 @@ class Owner
       element.owner = nil 
     end 
   end
+  def list_pets 
+    pets_list = []
+    self.dogs.each do |element|
+      pets_list << element 
+    end 
+    self.cats.each do |element|
+      pets_list << element
+    end 
+    pets_list
+  end 
   
   
   def say_species 
