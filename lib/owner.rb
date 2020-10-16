@@ -6,6 +6,9 @@ class Owner
     @species = "human"
     @@all << self 
   end
+  def cats 
+    cat.all.select { 
+  
   def say_species 
     "I am a human."
   end 
